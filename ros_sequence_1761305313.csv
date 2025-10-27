@@ -17,7 +17,7 @@ timestamp,topic,data
 5,/motor_command,"[13, 0]"
 0.5,/target_pose_door,"[0, 4200]"  
 15,/target_xy_mm,"[160.0, -1135.0]"
-2,/set_conveyor_distance,205
+2,/set_conveyor_distance,215
 1,/play_command,1
 39,/set_conveyor_distance,309
 4,/dc_pump,"[0, 1, 0, 0]"
@@ -28,5 +28,6 @@ timestamp,topic,data
 4,/ac,"[0, 1]"
 5,/ac,"[0, 0]"
 0.5,/target_pose_door,"[4200, 4200]"
-1,/target_pose_door,"[4200, 1000]"
+5,/target_pose_door,"[4200, 1000]"
 17,/target_pose_door,"[4200, 4200]"
+0,/target_xy_mm,"[0, 0]"
