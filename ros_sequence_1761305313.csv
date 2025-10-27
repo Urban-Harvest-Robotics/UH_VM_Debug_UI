@@ -1,11 +1,32 @@
 timestamp,topic,data
-1761305226.4215534,/target_xy_mm,"[236.0, 0.0]"
-1761305238.663555,/target_position_array,"[4095, 0]"
-1761305241.8823333,/target_position_array,"[0, 0]"
-1761305256.2408342,/target_xy_mm,"[156.0, 0.0]"
-1761305270.8547108,/target_xy_mm,"[156.0, -161.0]"
-1761305276.5167646,/Agitator_control,1
-1761305279.0323389,/Agitator_control,0
-1761305291.6236055,/target_xy_mm,"[156.0, -240.0]"
-1761305299.1460783,/Agitator_control,2
-1761305302.9763405,/Agitator_control,0
+0,/target_xy_mm,"[236.0, -21.0]"
+3,/target_position_array,"[4095, 0]"
+3,/target_position_array,"[0, 0]"
+4,/target_xy_mm,"[155.0, -160.0]"
+2.5,/Agitator_control,1
+0,/motor_command,"[1, 1]"
+8,/Agitator_control,0
+0,/motor_command,"[1, 0]"
+1.8,/target_xy_mm,"[155.0, -240.0]"
+0.8,/Agitator_control,2
+0,/motor_command,"[2, 1]"
+8,/Agitator_control,0
+0,/motor_command,"[2, 0]"
+0.5,/target_xy_mm,"[35.5, -1135.0]"
+12,/motor_command,"[13, 1]"
+5,/motor_command,"[13, 0]"
+0.5,/target_pose_door,"[0, 4200]"  
+15,/target_xy_mm,"[160.0, -1135.0]"
+2,/set_conveyor_distance,205
+1,/play_command,1
+39,/set_conveyor_distance,309
+4,/dc_pump,"[0, 1, 0, 0]"
+0,/dc_pump,"[0, 0, 1, 0]"
+6,/dc_pump,"[0, 0, 0, 0]"
+0,/dc_pump,"[0, 0, 0, 0]"
+0.5,/set_conveyor_distance,100
+4,/ac,"[0, 1]"
+5,/ac,"[0, 0]"
+0.5,/target_pose_door,"[4200, 4200]"
+1,/target_pose_door,"[4200, 1000]"
+17,/target_pose_door,"[4200, 4200]"
