@@ -1,0 +1,7 @@
+timestamp,topic,data
+1761299318.0731723,/target_xy_mm,"[92.0, 0.0]"
+1761299327.0599022,/target_position_array,"[4095, 0]"
+1761299347.2584677,/target_xy_mm,"[92.0, -255.0]"
+1761299352.222413,/Agitator_control,2
+1761299366.3115172,/Agitator_control,16
+1761299386.3068218,/motor_command,"[3, 1]"
