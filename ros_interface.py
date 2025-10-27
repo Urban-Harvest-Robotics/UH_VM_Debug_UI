@@ -103,16 +103,28 @@ class ROSInterface(Node):
         try:
             with open(filename, 'r') as f:
                 reader = csv.DictReader(f)
-                previous_time = None
-                for row in reader:
-                    topic = row["topic"]
-                    data = eval(row["data"])
-                    timestamp = float(row["timestamp"])
+            
+                total_delay = 0.0  # cumulative time elapsed
 
-                    # Wait for the same amount of time as when recorded
-                    if previous_time is not None:
-                        time.sleep(timestamp - previous_time)
-                    previous_time = timestamp
+                for row in reader:
+                    delay = float(row["timestamp"])  # delay in seconds before next action
+                    total_delay += delay
+
+                    # Sleep for this step delay
+                    time.sleep(delay)
+
+                    topic = row["topic"]
+                    data = eval(row["data"])                
+                # previous_time = None
+                # for row in reader:
+                #     delay = float(row["timestamp"])
+                #     topic = row["topic"]
+                #     data = eval(row["data"])
+                #     # timestamp = float(row["timestamp"])
+                #     # Wait for the same amount of time as when recorded
+                #     # if previous_time is not None:
+                #     time.sleep(delay)
+                #     # previous_time = timestamp
 
                     # Publish to the correct topic
                     if topic == "/ac":
